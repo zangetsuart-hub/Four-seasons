@@ -1,45 +1,32 @@
+
 .aqa-bg-body{
   background-image: url('../img/notes_2.jpg');
   background-attachment: fixed;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  min-height: 100vh;
 }
 
 .aqa-principal-search{
-  max-width: 550px;
-  flex:1;
+  width: 300px;
   background-color: #FFF4E2;
   border: 2px solid #462825
 }
 
 .aqa-search-btn-img{
-  padding: 10px;
   width: 56px;
-  border-radius: 70%;
-  background-color: #462825;
-  position:absolute;
-  top: 0px;
-  right: 0px;
+  background-color: #462825
 }
 
-.aqa-btn-fourseasons, .aqa-border-brown{
+.aqa-color-cont, .aqa-border-brown{
   background-color: #462825;
   color: #FFF4E2;
-  border-radius: 20px;
 }
 
-.aqa-content-title{
-  background-color:#71493c;
-  color: #FFF4E2;
-  border-radius: 50px;
-}
 .aqa-content-main{
   background-color: #fff4e27f;
-  border-radius: 50px;
   color: #462825;
 }
 
-.aqa-btn-fourseasons:hover, .aqa-btn-fourseasons:focus {
+.aqa-color-cont:hover, .aqa-color-cont:focus {
   background-color: #71493c;
   color: #FFF4E2;
 }
@@ -48,7 +35,6 @@
   background-color:#FFF4E2;
   color: #462825;
   width: 500px;
-  text-align: center;
 }
 .aqa-form > h2{
   font-size: 25px
@@ -57,23 +43,19 @@
 .form-control:focus{
   border-color:#8d6e4e;
   box-shadow: none;
-  outline: 0
 }
 
 .aqa-form-input{
   margin-bottom: 0px; 
   font-size:16px; 
   color: #462825;
-  position: relative;
   width: 100%;
   padding: 12px 0px 12px 55px; 
   border: 2px solid #462825;
   outline: none;
-
 }
 
 .aqa-form-texta{
-  padding: 10px;
   height: 100px;
   font-size:16px;
   background-color: transparent;
@@ -83,7 +65,6 @@
 }
 
 .aqa-input-icon{
-  position: absolute;
   top: 2px;
   left: 25px;
   background-color:#D3AB80;
@@ -105,26 +86,13 @@
 .aqa-footer{
   background-color: #462825;
   color: antiquewhite;
-  text-align: center;
   padding: 2rem 0 0 0;
-  position: relative;
   min-height: 15rem;
 }
-.aqa-figure-img {
-  width: 100%;
-  border-radius: 35px;
-}
 
-.aqa-rounded-section {
-  border-radius: 35px 35px 55px 55px;
-}
 .aqa-rounded-aside {
   border-radius: 40px 40px 60px 60px;
 }
-.aqa-rounded-card {
-  border-radius: 30px 30px 45px 45px;
-}
-
 
 .aqa-card-custom > h4 {
   background-color: #ffe1c1;
@@ -139,7 +107,7 @@
   border-radius: 20px;
   padding: 20px;
   height: 100%;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -163,7 +131,6 @@
 }
 
 .aqa-bg-term{
-  display: flex;
   margin: 0; 
   flex-direction: column; 
   background-color: #462825; 
