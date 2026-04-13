@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Four Seasons - Productos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100 aqa-bg-body">
+<body class="d-flex flex-column min-vh-100 aqa-bgc-body">
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid d-flex flex-column align-items-center">
@@ -23,23 +24,24 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center w-100">
             <form method="get"
-              class="d-flex align-items-center position-relative shadow-sm rounded-pill my-3 my-lg-0 mx-lg-4 aqa-principal-search min-w-300">
+              class="d-flex align-items-center position-relative shadow-sm rounded-pill my-3 my-lg-0 mx-lg-4 aqa-search min-w-300">
               <label hidden for="buscador">Buscador</label>
               <input type="search" class="form-control bg-transparent rounded-pill px-4 py-3 text-center w-100"
                 id="buscador" placeholder="Ingrese aquí su busqueda">
               <button class="btn position-absolute end-0 top-0" type="submit">
-                <img class="aqa-search-btn-img p-2 end-0 top-0 rounded-5 position-absolute" src="img/search-circle.svg" alt="search">
+                <img class="aqa-btn-srch aqa-bgc p-2 end-0 top-0 rounded-5 position-absolute"
+                  src="img/search-circle.svg" alt="search">
               </button>
             </form>
             <ul class="navbar-nav align-items-center">
               <li class="nav-item mx-2 mb-2 mb-lg-0">
-                <a class="btn aqa-color-cont rounded-pill px-4 py-3" href="productos.html">Productos</a>
+                <a class="btn aqa-pill rounded-pill px-4 py-3" href="productos.html">Productos</a>
               </li>
               <li class="nav-item mx-2 mb-2 mb-lg-0">
-                <a class="btn aqa-color-cont rounded-pill px-4 py-3" href="servicios.html">Servicios</a>
+                <a class="btn aqa-pill rounded-pill px-4 py-3" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item mx-2 mb-2 mb-lg-0">
-                <a class="btn aqa-color-cont rounded-pill px-4 py-3" href="contacto.html">Contacto</a>
+                <a class="btn aqa-pill rounded-pill px-4 py-3" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -47,241 +49,369 @@
       </div>
     </nav>
   </header>
-  <main class="container my-1">
-    <h2 class="aqa-border-brown rounded-5 py-2 p-2 text-center">PRODUCTOS DESTACADOS</h2>
-    <section class="row g-2 mb-3">
-      <h3 class="aqa-border-brown rounded-5 py-2 text-center">Cuerda Frotada</h3>
+  <main class="container my-2">
+    <h1 class="aqa-bgc rounded-5 py-2 p-2 text-center fs-2">PRODUCTOS DESTACADOS</h1>
+    <section class="row g-2 mb-3">      
+      <h2 class="aqa-bgc rounded-5 py-1 text-center fs-3">Cuerda Frotada</h2>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Violín Stradivarius 4/4</h4>
-          <p>Fabricado a mano por el maestro luthier Marco Dotti en el taller de Edgar Russ en Cremona, siguiendo el
-            modelo del violín construido por Guarneri del Gesu en el año 1742, cuyos propietarios anteriores fueron
-            Ferdinand David de Leipzig y Jascha Heifetz.</p>
-          <ul class="text-start">
-            <li>Tapa realizada en madera de pícea spalted típicamente italiana procedente del Val di Fiemme.</li>
-            <li>Fondo de arce bosnio flameado, secado al aire.</li>
-            <li>Aros y mástil realizados en la misma madera que el fondo.</li>
-            <li>Diapasón realizado en madera de ébano de la mejor calidad.</li>
-            <li>Imprimación para madera a base de caseína y calcio.</li>
-            <li>Acabado lacado con una laca de ámbar/aceite de linaza preparada por el propio Edgar Russ, que se colorea
-              con pigmentos para dar al instrumento un aspecto lacado fiel al original.</li>
-          </ul>
-          <img src="img/violin.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="violines">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/violin.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod" alt="violines">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Violín Stradivarius 4/4</h3>
+            <p class="card-text">Fabricado a mano por el maestro luthier Marco Dotti en el taller de Edgar Russ en
+              Cremona, siguiendo el
+              modelo del violín construido por Guarneri del Gesu en el año 1742, cuyos propietarios anteriores fueron
+              Ferdinand David de Leipzig y Jascha Heifetz.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#violin-detalle"
+              aria-expanded="false" aria-controls="violin-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="violin-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>Tapa realizada en madera de pícea spalted típicamente italiana procedente del Val di Fiemme.</li>
+                <li>Aros y mástil realizados en la misma madera que el fondo.</li>
+                <li>Diapasón realizado en madera de ébano de la mejor calidad.</li>
+                <li>Imprimación para madera a base de caseína y calcio.</li>
+                <li>Acabado lacado con una laca de ámbar/aceite de linaza preparada por el propio Edgar Russ, que se
+                  colorea
+                  con pigmentos para dar al instrumento un aspecto lacado fiel al original.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Viola Cannone 4/4</h4>
-          <p>Modelo Cannone de Paganini, construido según el modelo del "Cannone" de Guarneri del Gesu, así llamado por
-            Niccolo Paganini.</p>
-          <ul class="text-start">
-            <li>Tapa de pícea maciza.</li>
-            <li>Fondo de 2 piezas de arce flameado macizo.</li>
-            <li>Aros de arce flameado y mástil de arce flameado.</li>
-            <li>Diapasón de ébano.</li>
-            <li>Clavijero Bogaro & Clemente de madera de serpiente.</li>
-            <li>Cordal Bogaro & Clemente de madera de serpiente con silleta de madera de ébano y una afinaprima.</li>
-            <li>Fabricado por el maestro luthier Andrea Varazzani en Cremona (Italia).</li>
-          </ul>
-          <img src="img/viola.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="violas">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/viola.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod" alt="viola">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Viola Cannone 4/4</h3>
+            <p class="card-text">Modelo Cannone de Paganini, construido según el modelo del "Cannone" de Guarneri del
+              Gesu, así llamado por
+              Niccolo Paganini.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#viola-detalle"
+              aria-expanded="false" aria-controls="viola-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="viola-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>Tapa de pícea maciza.</li>
+                <li>Fondo de 2 piezas de arce flameado macizo.</li>
+                <li>Aros de arce flameado y mástil de arce flameado.</li>
+                <li>Diapasón de ébano.</li>
+                <li>Clavijero Bogaro & Clemente de madera de serpiente.</li>
+                <li>Cordal Bogaro & Clemente de madera de serpiente con silleta de madera de ébano y una afinaprima.
+                </li>
+                <li>Fabricado por el maestro luthier Andrea Varazzani en Cremona (Italia).</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Violonchelo Thomas Stöhr Orchestra No.2 4/4</h4>
-          <p>Del el maestro constructor de violines Thomas Stöhr (tres veces ganador del Premio Alemán de Instrumentos
-            Musicales).</p>
-          <ul class="text-start">
-            <li>Maderas tonales selectas secadas al aire en largo proceso en nuestro propio almacén de generaciones de
-              maderas tonales.</li>
-            <li>Rango de graves cálido, voluminoso, lleno de fuerza y oscuro.</li>
-            <li>Cuerda La con un sonido vivo, abierto y melodioso, sin aspereza.</li>
-            <li>Muy fácil de tocar, el instrumento ofrece una respuesta muy ligera.</li>
-            <li>Ajuste individual de cuerdas para favorecer un desarrollo completo del sonido.</li>
-            <li>Sin notas lobo.</li>
-            <li>Incluye certificado de autenticidad.</li>
-          </ul>
-          <img src="img/violonchelo.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="Violonchelos">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/violonchelo.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod"
+            alt="violonchelos">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Violonchelo Thomas Stöhr Orchestra No.2 4/4</h3>
+            <p class="card-text">Del el maestro constructor de violines Thomas Stöhr (tres veces ganador del Premio
+              Alemán de Instrumentos
+              Musicales).</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#violonchelo-detalle"
+              aria-expanded="false" aria-controls="violonchelo-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="violonchelo-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>Maderas tonales selectas secadas al aire en largo proceso en nuestro propio almacén de generaciones
+                  de
+                  maderas tonales.</li>
+                <li>Rango de graves cálido, voluminoso, lleno de fuerza y oscuro.</li>
+                <li>Cuerda La con un sonido vivo, abierto y melodioso, sin aspereza.</li>
+                <li>Muy fácil de tocar, el instrumento ofrece una respuesta muy ligera.</li>
+                <li>Ajuste individual de cuerdas para favorecer un desarrollo completo del sonido.</li>
+                <li>Sin notas lobo.</li>
+                <li>Incluye certificado de autenticidad.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Contrabajo Gewa Premium Line Solid 3/4</h4>
-          <p>Producido en Europa y ajustado en Alemania en el taller especializado del departamento de cuerdas de Gewa
-            Premium.</p>
-          <ul class="text-start">
-            <li>Contrabajo 3/4 con tapa de pícea maciza y fondo de arce macizo plano.</li>
-            <li>Diapasón de ébano redondeado.</li>
-            <li>Mecánicas tirolesas.</li>
-            <li>Pica ajustable en altura.</li>
-            <li>Longitud de escala cerca de 105 cm.</li>
-          </ul>
-          <img src="img/contrabajo.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="Contrabajo">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/contrabajo.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod"
+            alt="contrabajo">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Contrabajo Gewa Premium Line Solid 3/4</h3>
+            <p class="card-text">Producido en Europa y ajustado en Alemania en el taller especializado del departamento
+              de cuerdas de Gewa
+              Premium.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#Contrabajo-detalle"
+              aria-expanded="false" aria-controls="Contrabajo-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="Contrabajo-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>Contrabajo 3/4 con tapa de pícea maciza y fondo de arce macizo plano.</li>
+                <li>Diapasón de ébano redondeado.</li>
+                <li>Mecánicas tirolesas.</li>
+                <li>Pica ajustable en altura.</li>
+                <li>Longitud de escala cerca de 105 cm.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
     </section>
     <section class="row g-2 mb-3">
-      <h3 class="aqa-border-brown">Cuerda Frotada</h3>
+      <h2 class="aqa-bgc rounded-5 py-1 text-center fs-3">Cuerda Punzada</h2>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Guitarra Gibson SJ-200 Studio Rosewood</h4>
-          <p>Elegancia, Potencia y Sonido Legendario.</p>
-          <p>Desde su debut en 1937 como la "Super Jumbo", la Gibson SJ-200™ ha sido una guitarra inconfundible,
-            reconocida por su imponente tamaño y proyección excepcional. Su presencia ha dejado huella en géneros como
-            el country, folk, Americana y rock ’n’ roll, convirtiéndose en la elección de innumerables íconos de la
-            música.</p>
-          <ul class="text-start">
-            <li>Aros y fondo de arce macizo flameado.</li>
-            <li>Tapa de pícea de Sitka maciza.</li>
-            <li>Mástil de 2 piezas de arce.</li>
-            <li>Diapasón de palisandro.</li>
-            <li>Inlays de coronas graduadas de madreperla.</li>
-            <li>Puente SJ-200 Moustache con 4 barras.</li>
-            <li>Clavijas de afinación: Gotoh Keystone.</li>
-          </ul>
-          <img src="img/guitarra.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="guitarra">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/guitarra.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod"
+            alt="guitarra">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Guitarra Gibson SJ-200 Studio Rosewood</h3>
+            <p class="card-text">Desde su debut en 1937 como la "Super Jumbo", la Gibson SJ-200™ ha sido una guitarra
+              inconfundible,
+              reconocida por su imponente tamaño y proyección excepcional. Su presencia ha dejado huella en géneros como
+              el country, folk, Americana y rock ’n’ roll, convirtiéndose en la elección de innumerables íconos de la
+              música.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#guitarra-detalle"
+              aria-expanded="false" aria-controls="guitarra-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="guitarra-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>Aros y fondo de arce macizo flameado.</li>
+                <li>Tapa de pícea de Sitka maciza.</li>
+                <li>Mástil de 2 piezas de arce.</li>
+                <li>Diapasón de palisandro.</li>
+                <li>Inlays de coronas graduadas de madreperla.</li>
+                <li>Puente SJ-200 Moustache con 4 barras.</li>
+                <li>Clavijas de afinación: Gotoh Keystone.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Bajo B-54CE</h4>
-          <p>Está construido sobre el famoso diseño de cuerpo jumbo de Guild, lo que le brinda una auténtica sensación
-            Guild sin siquiera mirar la etiqueta del clavijero.</p>
-          <ul class="text-start">
-            <li>Forma del cuerpo: Jumbo.</li>
-            <li>Parte posterior del cuerpo: Parte posterior arqueada de arce.</li>
-            <li>Laterales del cuerpo: Laterales de arce macizo.</li>
-          </ul>
-          <img src="img/bajo.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="bajo">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/bajo.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod" alt="bajos">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Bajo B-54CE</h3>
+            <p class="card-text">El sistema de pastilla Fishman Matrix Infinity incorporado proporciona un sonido
+              amplificado natural. Sus características incluyen controles de volumen y tono montados en la boca del bajo
+              y un interruptor de voz incorporado que te permite elegir entre dos configuraciones de voz diferentes: una
+              con respuesta de graves mejorada y otra con una voz plana que reduce los graves retumbantes y te ayuda a
+              destacar en la mezcla.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#bajo-detalle"
+              aria-expanded="false" aria-controls="bajo-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="bajo-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>Radio del mástil: 12 pulgadas (305 mm)</li>
+                <li>Diapasón: Palosanto</li>
+                <li>Material del mástil: Caoba</li>
+                <li>Número de trastes: 22</li>
+                <li>Ancho de la cejuela: 1,625 pulgadas (41,3 mm)</li>
+                <li>Incrustaciones de posición: Puntos de nácar</li>
+                <li>Longitud de escala: 34 pulgadas (864 mm)</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Arpa Prelude 40 de Lyon and Healy</h4>
-          <p>El arpa Prelude 40 de Lyon and Healy es un sueño para cualquier artista que busque un sonido rico y oscuro
-            con una proyección clásica. Con espaciados y tensión similares a los de las arpas de pedal, es ideal tanto
-            para intérpretes experimentados como para quienes se inician en la música de arpa.</p>
-          <ul class="text-start">
-            <li>40 cuerdas.</li>
-            <li>Rango tonal: Mi 1ª octava - La 6ª octava.</li>
-            <li>El mismo espaciado entre cuerdas y tensión de las cuerdas que las arpas de pedales.</li>
-            <li>Tapa armónica de 38cm de anchura.</li>
-          </ul>
-          <img src="img/arpa.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="arpa">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/arpa.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod" alt="arpas">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Arpa Prelude 40 de Lyon and Healy</h3>
+            <p class="card-text">El arpa Prelude 40 de Lyon and Healy es un sueño para cualquier artista que busque un
+              sonido rico y oscuro
+              con una proyección clásica. Con espaciados y tensión similares a los de las arpas de pedal, es ideal tanto
+              para intérpretes experimentados como para quienes se inician en la música de arpa.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#arpa-detalle"
+              aria-expanded="false" aria-controls="arpa-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="arpa-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>40 cuerdas.</li>
+                <li>Rango tonal: Mi 1ª octava - La 6ª octava.</li>
+                <li>El mismo espaciado entre cuerdas y tensión de las cuerdas que las arpas de pedales.</li>
+                <li>Tapa armónica de 38cm de anchura.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-3 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Dulcimer D1210</h4>
-          <p>Sonido único: Hecho de excelentes materiales de abeto y caoba, este dulcimer es conocido por ofrecer un
-            tono equilibrado y moderado con más coloración de armónicos para un carácter y sonido amaderados.</p>
-          <ul class="text-start">
-            <li>Tapa de pícea laminada.</li>
-            <li>Fondo de tilo laminado.</li>
-            <li>Mástil y aros de arce.</li>
-            <li>Ancho de cejuela: Aprox. 3,5 cm.</li>
-            <li>Ancho usable del diapasón: Aprox. 68 cm.</li>
-            <li>Anchura del aro superior: 13,6 cm.</li>
-            <li>Ancho inferior: Aprox. 16,5 cm.</li>
-            <li>Longitud del cuerpo: Aprox. 75,2 cm.</li>
-            <li>Longitud total: Aprox. 93 cm.</li>
-            <li>Altura (incluyendo el puente): Aprox. 7,5 cm.</li>
-          </ul>
-          <img src="img/dulcimer.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="dulcimer">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/dulcimer.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod"
+            alt="violines">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Dulcimer D1210</h3>
+            <p class="card-text">Modelo Cannone de Paganini, construido según el modelo del "Cannone" de Guarneri del
+              Gesu, así llamado por
+              Niccolo Paganini.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#dulcimer-detalle"
+              aria-expanded="false" aria-controls="dulcimer-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="dulcimer-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 px-4">
+                <li>Tapa de pícea laminada.</li>
+                <li>Fondo de tilo laminado.</li>
+                <li>Mástil y aros de arce.</li>
+                <li>Ancho de cejuela: Aprox. 3,5 cm.</li>
+                <li>Ancho usable del diapasón: Aprox. 68 cm.</li>
+                <li>Anchura del aro superior: 13,6 cm.</li>
+                <li>Ancho inferior: Aprox. 16,5 cm.</li>
+                <li>Longitud del cuerpo: Aprox. 75,2 cm.</li>
+                <li>Longitud total: Aprox. 93 cm.</li>
+                <li>Altura (incluyendo el puente): Aprox. 7,5 cm.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
     </section>
     <section class="row g-2 mb-3">
-      <h3 class="aqa-border-brown">Cuerda Percutidas</h3>
+      <h2 class="aqa-bgc rounded-5 py-1 text-center fs-3">Cuerda Percutidas</h2>
       <div class="col-12 col-md-6 col-lg-4 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Pianos modelo B-211</h4>
-          <p>Músicos aficionados exigentes, pianistas profesionales e instituciones saben apreciar en su justa medida el
-            valor de este instrumento. La rica escala de matices sonoros y su sonido dotado de espíritu consiguen que
-            este modelo ocupe un lugar de privilegio dentro de la gama de productos de Steinway & Sons.</p>
-          <ul class="text-start">
-            <li>Año de fabricación: 1969.</li>
-            <li>Reconstruido por nuestros especialistas de Steinway y nuestro maestro constructor de pianos.</li>
-            <li>Este piano es un buen ejemplo del sonido Steinway inherente en su forma pura.</li>
-            <li>Es la rica escala de este instrumento y su impresionante sonido lo que ha convertido a este modelo en el
-              piano de cola más buscado por nuestros pianistas y músicos en la actualidad.</li>
-            <li>Se incluye un taburete de piano Andexinger de alta calidad.</li>
-            <li>Largo: 211 cm.</li>
-            <li>Ancho: 148 cm.</li>
-            <li>Peso: 345 kg.</li>
-          </ul>
-          <img src="img/piano.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="piano">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/piano.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod" alt="pianos">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Pianos modelo B-211</h3>
+            <p class="card-text">Músicos aficionados exigentes, pianistas profesionales e instituciones saben apreciar
+              en su justa medida el
+              valor de este instrumento. La rica escala de matices sonoros y su sonido dotado de espíritu consiguen que
+              este modelo ocupe un lugar de privilegio dentro de la gama de productos de Steinway & Sons.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#piano-detalle"
+              aria-expanded="false" aria-controls="piano-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="piano-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 p-4">
+                <li>Año de fabricación: 1969.</li>
+                <li>Reconstruido por nuestros especialistas de Steinway y nuestro maestro constructor de pianos.</li>
+                <li>Este piano es un buen ejemplo del sonido Steinway inherente en su forma pura.</li>
+                <li>Es la rica escala de este instrumento y su impresionante sonido lo que ha convertido a este modelo
+                  en el
+                  piano de cola más buscado por nuestros pianistas y músicos en la actualidad.</li>
+                <li>Se incluye un taburete de piano Andexinger de alta calidad.</li>
+                <li>Largo: 211 cm.</li>
+                <li>Ancho: 148 cm.</li>
+                <li>Peso: 345 kg.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-4 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Dulcémele martillado PD40</h4>
-          <p>El PD40 está fabricado íntegramente en madera maciza y cuenta con un esquema de afinación poco convencional
-            que imita las teclas blancas y negras de un piano. Esta afinación única permite un rango cromático de 3,5
-            octavas en un instrumento de tamaño y precio medianos.</p>
-          <ul class="text-start">
-            <li>Tapa de pícea chapada en nogal.</li>
-            <li>Fondo de pícea chapada en caoba.</li>
-            <li>3 cursos de Sol - Re3.</li>
-            <li>Acabado: Laca satinada.</li>
-            <li>Cuerdas Optima Bergfee.</li>
-            <li>Peso aprox.: 7 kg.</li>
-            <li>Fabricado en Alemania.</li>
-          </ul>
-          <img src="img/dulcemele_martillado.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="dulcemele">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/dulcemele_martillado.png" class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod"
+            alt="dulcemele">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Dulcémele martillado PD40</h3>
+            <p class="card-text">El PD40 está fabricado íntegramente en madera maciza y cuenta con un esquema de
+              afinación poco convencional
+              que imita las teclas blancas y negras de un piano. Esta afinación única permite un rango cromático de 3,5
+              octavas en un instrumento de tamaño y precio medianos.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#martillado-detalle"
+              aria-expanded="false" aria-controls="martillado-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="martillado-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 p-4">
+                <li>Tapa de pícea chapada en nogal.</li>
+                <li>Fondo de pícea chapada en caoba.</li>
+                <li>3 cursos de Sol - Re3.</li>
+                <li>Acabado: Laca satinada.</li>
+                <li>Cuerdas Optima Bergfee.</li>
+                <li>Peso aprox.: 7 kg.</li>
+                <li>Fabricado en Alemania.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
       <div class="col-12 col-md-6 col-lg-4 d-flex">
-        <article class="aqa-card-custom w-100">
-          <h4 class="text-center">Bo Yue Yangqin de Sándalo (Modelo: 402)</h4>
-          <p>Gracias al uso de sándalo violeta africano y una tabla armónica bien curada, Bo Yue ha logrado añadir una
-            mayor profundidad, calidez y suavidad al tono de este Yangqin. Dado que muchos instrumentos de cuerda
-            pulsada suenan especialmente ásperos de cerca, este Yangqin ahora ofrece notas extremadamente redondas
-            incluso en sus registros agudos. </p>
-          <ul class="text-start">
-            <li>Grado: grado profesional.</li>
-            <li>Material de la estructura: madera dura.</li>
-            <li>Tabla de resonancia: paulownia de alta calidad de Lankao, provincia de Henan.</li>
-            <li>Lugar de origen: Hebei de China.</li>
-            <li>Puentes: sándalo africano.</li>
-            <li>Decoración: flores hechas a mano.</li>
-            <li>Tamaño: aproximadamente 117 cm para la parte más larga, aproximadamente 78 cm para la parte más corta,
-              aproximadamente 52 cm para el ancho. </li>
-            <li>Accesorios Yangqin GRATIS (Valor $400) Estuche rígido con ruedas, palos Yangqin.</li>
-          </ul>
-          <img src="img/bo_yue_yangqin_de_sandalo.png" class="img-fluid mx-auto d-block aqa-img-prod" alt="yangqin">
+        <article class="card aqa-card-custom p-3 rounded-5 w-100">
+          <img src="img/bo_yue_yangqin_de_sandalo.png"
+            class="img-fluid aqa-pill-3 rounded-4 mx-auto d-block aqa-img-prod" alt="violines">
+          <div class="card-body">
+            <h3 class="text-center aqa-pill-2 p-2 rounded-4 fs-4">Bo Yue Yangqin de Sándalo (Modelo: 402)</h3>
+            <p class="card-text">Gracias al uso de sándalo violeta africano y una tabla armónica bien curada, Bo Yue ha
+              logrado añadir una
+              mayor profundidad, calidez y suavidad al tono de este Yangqin. Dado que muchos instrumentos de cuerda
+              pulsada suenan especialmente ásperos de cerca, este Yangqin ahora ofrece notas extremadamente redondas
+              incluso en sus registros agudos.</p>
+            <button class="btn aqa-pill-3" type="button" data-bs-toggle="collapse" data-bs-target="#yanquin-detalle"
+              aria-expanded="false" aria-controls="yanquin-detalle">Ver
+              más</button>
+            <div class="collapse mt-2" id="yanquin-detalle">
+              <ul class="card card-body rounded-4 text-start aqa-pill-3 p-4">
+                <li>Grado: grado profesional.</li>
+                <li>Material de la estructura: madera dura.</li>
+                <li>Tabla de resonancia: paulownia de alta calidad de Lankao, provincia de Henan.</li>
+                <li>Lugar de origen: Hebei de China.</li>
+                <li>Puentes: sándalo africano.</li>
+                <li>Decoración: flores hechas a mano.</li>
+                <li>Tamaño: aproximadamente 117 cm para la parte más larga, aproximadamente 78 cm para la parte más
+                  corta,
+                  aproximadamente 52 cm para el ancho. </li>
+                <li>Accesorios Yangqin GRATIS (Valor $400) Estuche rígido con ruedas, palos Yangqin.</li>
+              </ul>
+            </div>
+          </div>
         </article>
       </div>
     </section>
   </main>
-  <footer class="text-center text-light mt-auto py-4 aqa-footer position-relative text-center">
-    <div class="container">
-      <br>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <table class="footer-table table-borderless">
-            <tbody>
-              <tr>
-                <th>Contáctanos</th>
-                <th>Nuestros Servicios</th>
-              </tr>
-              <tr>
-                <td>Celular: 941635656 </td>
-                <td>Mantenimiento</td>
-              </tr>
-              <tr>
-                <td>Correo: <address class="d-inline">strings_foryou@fourseasons.com.pe</address>
-                </td>
-                <td>Accesorios</td>
-              </tr>
-              <tr>
-                <td>Dirección: Av. Capriccio N° 24 Bach 12, Chorrillos</td>
-                <td>Convenios</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  <footer class="container-fluid aqa-bgc pt-5 m-0">
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-md-2 mb-3 text-center">
+        <a href="index.html">
+          <img class="aqa-title-term" src="img/fourseasonsbrowntransparent.png" height="100" alt="Four Seasons">
+        </a>
       </div>
+      <div class="col-12 col-md-1 mb-3 text-center">
+        <p class="fs-4">Explora:</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="productos.html" class="text-reset text-decoration-none">Productos</a></li>
+          <li class="nav-item mb-2"><a href="servicios.html" class="text-reset text-decoration-none">Servicios</a></li>
+          <li class="nav-item mb-2"><a href="contacto.html" class="text-reset text-decoration-none">Contacto</a></li>
+          <li class="nav-item mb-2"><a href="#" class="text-reset text-decoration-none">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="table-responsive col-12 col-md-3 mb-3 text-center">
+        <p class="fs-4">Contáctanos:</p>
+        <table class="table-borderless aqa-bgc m-auto">
+          <tbody>
+            <tr>
+              <td><i class="bi bi-phone m-3"></i></td>
+              <td class="text-start">941635656</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-envelope-at-fill m-3 text-break"></i></td>
+              <td>Strings_foryou@fourseasons.com.pe</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-geo-alt-fill m-3"></i></td>
+              <td class="text-start">Av. Capriccio N° 24, Chorrillos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-12 col-md-2 mb-3 text-center">
+        <p class="fs-4">Nuestros Servicios:</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">Mantenimiento</li>
+          <li class="nav-item mb-2">Accesorios</li>
+          <li class="nav-item mb-2">Convenios</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-1 mb-3 text-center">
+        <p class="fs-4">Redes:</p>
+        <ul class="list-unstyled d-flex d-md-block justify-content-center gap-3">
+          <li class="mb-2"><i class="bi bi-facebook"></i></li>
+          <li class="mb-2"><i class="bi bi-whatsapp"></i></li>
+          <li class="mb-2"><i class="bi bi-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center">
       <br>
       <small>Copyright © 2026</small>
     </div>
