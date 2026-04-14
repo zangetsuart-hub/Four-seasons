@@ -1,5 +1,4 @@
-
-.aqa-bgc-body{
+.aqa-bgc-body {
   background-image: url('../img/notes_2.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -7,91 +6,148 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   min-height: 100vh;
 }
-.aqa-bgc{
+
+.aqa-bgc {
   background-color: #462825;
   color: #FFF4E2;
 }
-.aqa-b-color{
+
+.aqa-b-color {
   color: #462825;
 }
 
-.aqa-search{
+.aqa-search {
+  position: relative;
   background-color: #FFF4E2;
   border: 2px solid #462825;
-  width: 90%;         
-  max-width: 400px;
-  margin-left: auto; 
-  margin-right: auto
+  width: 200px;
+  transition: width 0.4s ease;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
-.aqa-btn-srch{
-  width: 56px;       
-  height: auto;     
+
+@media (min-width: 992px) {
+  .aqa-search {
+    width: 200px;
+  }
+}
+
+.aqa-search:focus-within {
+  width: 450px;
+}
+
+.aqa-search .form-control {
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.aqa-search input {
+  padding-right: 55px;
+}
+
+.custom-input:focus::placeholder {
+  opacity: 1;
+}
+
+.placeholder-corto {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  color: #462825;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.aqa-search:focus-within .placeholder-corto {
+  opacity: 0;
+}
+
+.aqa-btn-srch {
+  width: 55px;
+  height: auto;
   min-width: 95%;
   display: block
 }
 
-.aqa-pill{
+.aqa-pill {
   background-color: #462825;
   color: #FFF4E2;
-}
-.aqa-pill:hover, .aqa-pill:focus {
-  background-color: #71493c;
-  color: #FFF4E2;
+  border: none;
+  opacity: 1;
 }
 
-.aqa-pill-2{
+.aqa-pill:active,
+.aqa-pill:focus,
+.aqa-pill:hover,
+.btn.aqa-pill:active:focus {
+  background-color: #71493c;
+  color: #FFF4E2;
+  opacity: 1;
+  box-shadow: none;
+  outline: none
+}
+
+.aqa-pill-2 {
   background-color: #FFF4E2;
-  color:#71493c
+  color: #71493c
 }
 
-.aqa-pill-3{
+.aqa-pill-3 {
   background-color: #71493c;
   color: #FFF4E2;
 }
 
-.aqa-cont-main{
+.aqa-cont-main {
   background-color: #fff4e27f;
 }
 
-.aqa-form{
+.aqa-form {
   background-color: #FFF4E2;
   width: 90%;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-.aqa-form > h2{
+
+.aqa-form>h2 {
   font-size: 25px
 }
-.form-control:focus{
-  border-color:#8d6e4e;
+
+.form-control:focus {
+  border-color: #8d6e4e;
   box-shadow: none;
 }
-.aqa-form-input{
+
+.aqa-form-input {
   color: #462825;
-  padding: 12px 0px 12px 55px; 
+  padding: 12px 0px 12px 55px;
   border: 2px solid #462825;
 }
 
-.aqa-form-texta{
+.aqa-form-texta {
   height: 100px;
-  resize:none;
+  resize: none;
   border: 2px solid #462825
 }
 
-.aqa-input-icon{
+.aqa-input-icon {
   top: 2px;
   left: 2px;
-  background-color:#D3AB80;
+  background-color: #D3AB80;
   width: 48px;
 }
 
-.aqa-text-title{
+.aqa-text-title {
   color: #462825;
-  background-color:#FFF4E2;
+  background-color: #FFF4E2;
 }
 
-.aqa-card-custom > h4 {
+.aqa-card-custom>h4 {
   background-color: #ffe1c1;
 }
 
@@ -99,38 +155,38 @@
   background-color: #462825;
   color: #FFF4E2;
   height: 100%;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.aqa-img-prod{
-  height: 450px; 
+.aqa-img-prod {
+  height: 450px;
   object-fit: contain
 }
 
-.aqa-bg-term{
-  flex-direction: column; 
-  background-color: #462825; 
-  width: 100%; 
+.aqa-bg-term {
+  flex-direction: column;
+  background-color: #462825;
+  width: 100%;
   box-shadow: 0 0 20px #FFF4E2;
 }
 
-.aqa-title-term{
+.aqa-title-term {
   filter: sepia(100%) saturate(100%) brightness(300%) hue-rotate(340deg)
 }
 
-.aqa-bg-term > main{
-  background-color: #FFF4E2; 
-  color: #462825; 
-  padding: 20px 100px 20px 100px; 
+.aqa-bg-term>main {
+  background-color: #FFF4E2;
+  color: #462825;
+  padding: 20px 100px 20px 100px;
   width: 700px;
   box-shadow: 0 0 20px #FFF4E2
 }
 
-.aqa-bg-term > footer{
+.aqa-bg-term>footer {
   color: #ffe1c1;
 }
 
-.aqa-col-1{
+.aqa-col-1 {
   color: #FFF4E2
 }
