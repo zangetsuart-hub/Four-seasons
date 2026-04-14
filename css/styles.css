@@ -2,7 +2,10 @@
 .aqa-bgc-body{
   background-image: url('../img/notes_2.jpg');
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  min-height: 100vh;
 }
 .aqa-bgc{
   background-color: #462825;
@@ -13,12 +16,18 @@
 }
 
 .aqa-search{
-  width: 500px;
   background-color: #FFF4E2;
-  border: 2px solid #462825
+  border: 2px solid #462825;
+  width: 90%;         
+  max-width: 400px;
+  margin-left: auto; 
+  margin-right: auto
 }
 .aqa-btn-srch{
-  width: 56px;
+  width: 56px;       
+  height: auto;     
+  min-width: 95%;
+  display: block
 }
 
 .aqa-pill{
@@ -45,8 +54,11 @@
 }
 
 .aqa-form{
-  background-color:#FFF4E2;
-  width: 500px;
+  background-color: #FFF4E2;
+  width: 90%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .aqa-form > h2{
   font-size: 25px
@@ -119,3 +131,6 @@
   color: #ffe1c1;
 }
 
+.aqa-col-1{
+  color: #FFF4E2
+}
