@@ -27,12 +27,6 @@
   overflow: hidden;
 }
 
-@media (min-width: 992px) {
-  .aqa-search {
-    width: 200px;
-  }
-}
-
 .aqa-search:focus-within {
   width: 450px;
 }
@@ -189,4 +183,10 @@
 
 .aqa-col-1 {
   color: #FFF4E2
+}
+
+@media (min-width: 992px) {
+  .aqa-search {
+    width: 200px;
+  }
 }
